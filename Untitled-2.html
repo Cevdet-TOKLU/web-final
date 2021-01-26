@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WebFinal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="container" style="text-align: center;" >
+		<img src="bm.png" >
+	<h2>Erciyes Üniversitesi Bilgisayar Mühendisliği Bölümü Web Programlama I dersi final sorusu</h2>
+		<h3>Dr. Öğr. Üyesi Fehim Köylü</h3>
+		<h1>Alışveriş Uygulaması</h1>
+		<em>Vermek istediğiniz siparişler için aşağıdaki listeden seçerek adedini belirtiniz.  </em>
+	
+	<div class="row">
+    <div class="col" ><h3 style="background-color: lavender;text-align: center;">Ekmek</h3>
+		<p style="text-align:center;font-size:25px;"><strong>2₺<span style="color:lightgray">/adet</span></strong></p>
+		<p style="text-align: center;">Somun Ekmek<br>200gr</p>
+		<input type="button" style="color:white;background-color:lightblue;text-align: center;" value="Sepete ekle">
+		</div>
+		
+    <div class="col" ><h3 style="background-color: lavender;text-align: center;">Çikolata</h3>
+		<p style="text-align:center;font-size:25px;"><strong>5₺<span style="color:lightgray">/adet</span></strong></p>
+		<p style="text-align: center;">Bitter Çikolata<br>60gr</p>
+		<input type="button" style="color:white;background-color:lightblue;text-align: center;" value="Sepete ekle">
+		</div>
+    <div class="col" ><h3 style="background-color: lavender;text-align: center;">Domates</h3>
+		<p style="text-align:center;font-size:25px;"><strong>6₺<span style="color:lightgray">/kg</span></strong></p>
+		<p style="text-align: center;">Domates<br>Antalya Sera</p>
+		<input type="button" style="color:white;background-color:lightblue;text-align: center;" value="Sepete ekle">
+		</div>
+  </div>
+		<br>
+		</div>
+	<div class="row">
+	 <div class="col" ><h3 style="margin-left: 20px;">Siparişler</h3>
+    <ul>
+    <li ng-repeat="x in products"><span ng-click="removeItem($index)">×</span></li>
+    </ul>
+    <input ng-model="addMe">
+    <button ng-click="addItem()">Kupon Gir</button>
+		
+		
+		</div> 
+		<div class="col" ></div> 
+		<div class="col" ></div>
+	</div>
+	<div class="container" style="text-align: center; " >
+	<span style="color: lightgrey">&copy;Fehim Köylü Bilgisayar Mühendisliği Bölümü</span><br>
+		<a href="">Bölüm Sayfası</a>&nbsp;&nbsp;<a href="">Alışveriş Kuralları</a>&nbsp;&nbsp;<a href="">Destek</a>
+	</div>
+</body>
+</html>
